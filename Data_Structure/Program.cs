@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System.Collections.Generic;
+using Data_Structure; 
+
+LinkedList customLinkedList = new LinkedList();
+customLinkedList.AddNode(56);
+customLinkedList.AddNode(30);
+customLinkedList.AddNode(76);
