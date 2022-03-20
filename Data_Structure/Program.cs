@@ -3,7 +3,10 @@ using Data_Structure;
 
 LinkedList customLinkedList = new LinkedList();
 customLinkedList.AddLastNode(56);
+customLinkedList.AddLastNode(30);
 customLinkedList.AddLastNode(70);
 customLinkedList.DisplayLinkedList();
-customLinkedList.InsertAtParticularPosition(1, 30);
+Console.WriteLine("-------------------------");
+int node = customLinkedList.DeleteFirstNode();
+Console.WriteLine("{0} node deleted", node);
 customLinkedList.DisplayLinkedList();
