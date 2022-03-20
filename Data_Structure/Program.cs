@@ -2,7 +2,8 @@
 using Data_Structure; 
 
 LinkedList customLinkedList = new LinkedList();
-customLinkedList.AppendLinkedList(56);
-customLinkedList.AppendLinkedList(30);
-customLinkedList.AppendLinkedList(70);
+customLinkedList.AddLastNode(56);
+customLinkedList.AddLastNode(70);
+customLinkedList.DisplayLinkedList();
+customLinkedList.InsertAtParticularPosition(1, 30);
 customLinkedList.DisplayLinkedList();

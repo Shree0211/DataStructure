@@ -62,5 +62,26 @@ namespace Data_Structure
             AddLastNode(data);
             Console.WriteLine("{0} node Appended", data);
         }
+        public Node InsertAtParticularPosition(int position, int data)
+        {
+            Node newestNode = new Node(data);
+            if (this.head == null)
+            {
+                return newestNode;
+            }
+            //Node Exchange
+            Node prev = null;
+            Node current = this.head;
+            int count = 0;
+            while (current != null && count < position)
+            {
+                prev = current;
+                current = current.next;
+                count++;
+            }
+            newestNode.next = prev.next;
+            prev.next = newestNode;
+            return this.head;
+        }
     }
 }
