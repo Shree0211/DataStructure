@@ -120,16 +120,17 @@ namespace Data_Structure
         public int SearchNode(int value)
         {
             Node temp = this.head;
+            int count = 0;
             while (temp != null)
             {
                 if (temp.data == value)
                 {
-                    return value;
+                    return count;
                 }
                 temp = temp.next;
+                count++;
             }
-            Console.WriteLine("{0} is not a Linked List Node", value);
-            return 0;
+            return count;
         }
     }
 }
