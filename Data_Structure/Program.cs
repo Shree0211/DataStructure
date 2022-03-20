@@ -2,6 +2,13 @@
 using Data_Structure; 
 
 LinkedList customLinkedList = new LinkedList();
-customLinkedList.AddNode(56);
-customLinkedList.AddNode(30);
-customLinkedList.AddNode(76);
+customLinkedList.AddLastNode(56);
+customLinkedList.AddLastNode(30);
+customLinkedList.AddLastNode(76);
+Console.WriteLine("nodes inserted");
+customLinkedList.DisplayLinkedList();
+
+customLinkedList.AddFirstNode(70);
+customLinkedList.AddFirstNode(30);
+customLinkedList.AddFirstNode(56);
+customLinkedList.DisplayLinkedList();
